@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { execFileSync } = require('child_process');
 let encoded = '';
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 7; i++) {
   encoded += fs.readFileSync(`payload/part${String(i).padStart(2, '0')}.b64`, 'utf8').trim();
 }
 fs.writeFileSync('.v818.tar.xz', Buffer.from(encoded, 'base64'));
