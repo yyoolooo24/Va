@@ -1,1 +1,1 @@
-DentHub V8.18 temporary Vercel deployment bridge.
+DentHub V8.18 deployment bridge ready. Vercel npm install runs bootstrap.cjs, which extracts payload.tar.xz into the repository root, then Next.js builds normally.

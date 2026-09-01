@@ -1,11 +1,13 @@
 {
-  "name": "denthub-v8-18-deploy",
+  "name": "denthub-v8-18-dob-input",
   "version": "8.18.0",
   "private": true,
   "scripts": {
-    "preinstall": "node bootstrap.cjs",
+    "postinstall": "node bootstrap.cjs",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
